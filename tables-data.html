@@ -28,7 +28,7 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
 
-            <a class="navbar-brand ms-3" href="#">Beyond Admin</a>
+            <a class="navbar-brand ms-3" href="#">ODBUS Admin</a>
 
             <!-- Right Side Icons + User -->
             <div class="ms-auto d-flex align-items-center gap-3 text-white">
@@ -63,10 +63,10 @@
                 </button>
             </div>
             <div class="d-md-none text-center border-bottom pb-3">
-    <img src="https://i.pravatar.cc/60" class="rounded-circle mb-2" width="60" height="60">
-    <div class="fw-semibold">David Stevenson</div>
-    <div class="text-muted small">Administrator</div>
-</div>
+                <img src="https://i.pravatar.cc/60" class="rounded-circle mb-2" width="60" height="60">
+                <div class="fw-semibold">David Stevenson</div>
+                <div class="text-muted small">Administrator</div>
+            </div>
             <div class="sidebar-heading p-3 fw-bold">Menu</div>
 
             <div class="list-group list-group-flush">
@@ -108,6 +108,11 @@
                     </a>
                 </div>
 
+                <a class="list-group-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    href="#logoutMenu">
+                    <span><i class="fa-solid fa-right-from-bracket me-2"></i> Log Out</span>
+                </a>
+
             </div>
 
         </div>
@@ -118,7 +123,8 @@
             <!-- Breadcrumb -->
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <i class="fa-solid fa-house me-1"></i><li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <i class="fa-solid fa-house me-1"></i>
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item">Tables</li>
                     <li class="breadcrumb-item active">Data Tables</li>
                 </ol>
@@ -344,10 +350,16 @@
                         </table>
                     </div>
 
-                    <div class="d-flex justify-content-between mt-2">
-                        <div></div>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <!-- LEFT: Showing entries -->
+                        <div class="text-muted small">
+                            Showing 1 to 10 of 18 entries
+                        </div>
+
+                        <!-- RIGHT: Total -->
                         <div><b>Total :</b> 78</div>
                     </div>
+
 
                     <ul class="pagination justify-content-end mt-2">
                         <li class="page-item disabled"><a class="page-link">Prev</a></li>
@@ -362,7 +374,6 @@
         </div>
     </div>
     </div>
-
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
